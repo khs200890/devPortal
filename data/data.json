@@ -1,0 +1,49 @@
+{
+    "data": [
+        [
+            "Tiger Nixon",
+            "System Architect",
+            "Edinburgh",
+            "5421",
+            "2011\/04\/25",
+            "$320,800",
+            "<a href='javascript:;' class='tableEdit editor_edit'><i class='fa fa-edit'></i></a>  <a href='javascript:;' class='tableDelete editor_remove'><i class='fa fa-trash-alt'></i></a> <a href='javascript:;' class='tableView editor_view'><i class='fa fa-eye'></i></a>"
+        ],
+        [
+            "Garrett Winters",
+            "Accountant",
+            "Tokyo",
+            "8422",
+            "2011\/07\/25",
+            "$170,750",
+            "<a href='javascript:;' class='tableEdit editor_edit'><i class='fa fa-edit'></i></a> / <a href='javascript:;' class='tableDelete editor_remove'><i class='fa fa-trash-alt'></i></a> <a href='javascript:;' class='tableView editor_view'><i class='fa fa-eye'></i></a>"
+        ],
+        [
+            "Ashton Cox",
+            "Junior Technical Author",
+            "San Francisco",
+            "1562",
+            "2009\/01\/12",
+            "$86,000",
+            "<a href='javascript:;' class='tableEdit editor_edit'><i class='fa fa-edit'></i></a> / <a href='javascript:;' class='tableDelete editor_remove'><i class='fa fa-trash-alt'></i></a> <a href='javascript:;' class='tableView editor_view'><i class='fa fa-eye'></i></a>"
+        ],
+        [
+            "Cedric Kelly",
+            "Senior Javascript Developer",
+            "Edinburgh",
+            "6224",
+            "2012\/03\/29",
+            "$433,060",
+            "<a href='javascript:;' class='tableEdit editor_edit'><i class='fa fa-edit'></i></a> / <a href='javascript:;' class='tableDelete editor_remove'><i class='fa fa-trash-alt'></i></a> <a href='javascript:;' class='tableView editor_view'><i class='fa fa-eye'></i></a>"
+        ],
+        [
+            "Airi Satou",
+            "Accountant",
+            "Tokyo",
+            "5407",
+            "2008\/11\/28",
+            "$162,700",
+            "<a href='javascript:;' class='tableEdit editor_edit'><i class='fa fa-edit'></i></a> / <a href='javascript:;' class='tableDelete editor_remove'><i class='fa fa-trash-alt'></i></a> <a href='javascript:;' class='tableView editor_view'><i class='fa fa-eye'></i></a>"
+        ]
+    ]
+}

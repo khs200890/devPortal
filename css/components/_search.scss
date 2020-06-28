@@ -1,0 +1,121 @@
+//Search
+	.searchContainer {
+
+		//Search with border
+		.primarySearch {
+			background: transparent !important;
+			box-shadow: var(--no-box-shadow) !important;
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--border) !important;
+			transition: all ease 0.3s;
+			@include rounded(0%);
+
+			input[type="text"] {
+				background: transparent !important;
+				border: var(--no-border);
+				color: var(--input-text)!important;
+
+				&:focus {
+					box-shadow: var(--no-box-shadow);
+					transition: all ease 0.3s;
+				}
+
+			}
+
+			.input-group-append {
+
+				.btn {
+
+					border-radius: 0px!important;
+
+					&:active {
+						box-shadow: var(--no-box-shadow);
+					}
+
+					&:focus {
+						box-shadow: var(--no-box-shadow);
+					}
+
+					&:hover {
+						color: var(--default-text);
+						background: var(--primary);
+						box-shadow: var(--no-box-shadow);
+					}
+				}
+
+			}
+
+			&:hover {
+				border-color: var(--primary) !important;
+				transition: all ease 0.3s;
+			}
+
+			&:focus {
+				border-color: var(--primary) !important;
+				transition: all ease 0.3s;
+			}
+		}
+
+		//Search with no border
+		.noBorderSearch {
+			background: transparent !important;
+			box-shadow: var(--no-box-shadow) !important;
+			border-color: var(--no-border) !important;
+			transition: all ease 0.3s;
+			@include rounded(0%);
+
+			input[type="text"] {
+				background: transparent !important;
+				border: var(--no-border);
+				color: var(--input-text)!important;
+
+				&:focus {
+					box-shadow: var(--no-box-shadow);
+					transition: all ease 0.3s;
+				}
+
+			}
+
+			.input-group-append {
+
+				.btn {
+					border-radius: 0px!important;
+
+					&:active {
+						box-shadow: var(--no-box-shadow);
+					}
+
+					&:focus {
+						box-shadow: var(--no-box-shadow);
+					}
+
+					&:hover {
+						color: var(--default-text);
+						background: var(--primary);
+						box-shadow: var(--no-box-shadow);
+					}
+				}
+
+			}
+
+			&:hover {
+				border-color: var(--primary) !important;
+				transition: all ease 0.3s;
+			}
+
+			&:focus {
+				border-color: var(--primary) !important;
+				transition: all ease 0.3s;
+			}
+		}
+
+	}
+
+	.searchWithBtnContainer {
+
+		.primaryBtn {
+			@include margin-left-right-small;
+		}
+
+	}

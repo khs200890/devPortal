@@ -1,0 +1,227 @@
+//Table
+	.tableContainer {
+
+		table { 
+			width: 100%; 
+			border-collapse: collapse; 
+			margin: 30px auto;
+			overflow-y: auto;
+
+			thead, tbody {
+				border-left: var(--line-border); 
+				border-right: var(--line-border); 
+			}
+
+			thead {
+
+				.sorting_asc, .sorting_desc {
+					filter: saturate(7.5);
+				}
+
+				th { 
+					border-top: var(--disable-border)!important; 
+					border-bottom: var(--disable-border)!important; 
+					color: var(--body-text); 
+					text-align: left;
+					font-weight: bold;
+					padding: 10px; 
+					text-align: left; 
+					font-size: 0.9em;
+				}
+
+			}
+
+			td {
+				border-top: var(--disable-border)!important; 
+				border-bottom: var(--disable-border)!important; 
+				color: var(--input-text);
+				padding: 10px; 
+				text-align: left; 
+				font-size: 0.9em;
+
+				i {
+					font-size: 1.5em;
+					color: var(--input-text)!important;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+
+			}
+
+			tr {
+				background: var(--surface-background)!important; 
+				transition: background ease 0.2s;
+
+				&:hover {
+					background: var(--default-background)!important; 
+					transition: background ease 0.2s;
+				}
+			}
+
+			@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+				table { 
+				  	width: 100%; 
+				}
+
+				table, thead, tbody, th, td, tr { 
+					display: block; 
+				}
+				
+				thead tr { 
+					position: absolute;
+					top: -9999px;
+					left: -9999px;
+				}
+				
+				tr { border: 1px solid #ccc; }
+				
+				td { 
+					border: none;
+					margin: 10px 0px;
+					position: relative;
+					padding-left: 55%; 
+				}
+
+				td:before { 
+					position: absolute;
+					top: 10px;
+					left: 5px;
+					width: 50%; 
+					padding-right: 10px; 
+					white-space: nowrap;
+					content: attr(data-column);
+					color: var(--title-color);
+					font-weight: bold;
+				}
+
+				// tr:nth-of-type(odd) { 
+				// 	background: #FEFEFE; 
+				// }
+
+			}
+		
+		}
+
+		label {
+			color: var(--body-text);
+		}
+
+		input {
+			background: transparent !important;
+			box-shadow: var(--no-box-shadow) !important;
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--border) !important;
+			color: var(--input-text)!important;
+			transition: all ease 0.3s;
+			border-radius: 0px!important;
+			height: 38px;
+
+			&:hover {
+				border-color: var(--primary) !important;
+				transition: all ease 0.3s;
+			}
+
+			&:focus {
+				border-color: var(--primary) !important;
+				transition: all ease 0.3s;
+			}
+		}
+
+		select {
+			background: transparent;
+			border-radius: 5px !important;
+			box-shadow: var(--no-box-shadow) !important;
+			transition: all ease 0.3s;
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--border) !important;
+			height: 38px !important;
+			border: 1px solid #d1d3e2;
+			transition: all ease 0.3s;
+			border-radius: 0px!important;
+			color: var(--input-text);
+			-webkit-appearance: none;
+			padding: 0px 10px;
+		}
+
+		.toolbar {
+			display: flex;
+			float: right;
+			@include padding-left-right-small;
+
+			.primaryBtn {
+				@include margin-left-right-small;
+			}
+		}
+
+		.tableEdit {
+
+			i {
+				color: var(--body-text);
+			}
+
+			&:hover {
+				i {
+					color: var(--warning)!important;
+				}
+			}
+
+		}
+
+		.tableDelete {
+
+			i {
+				color: var(--body-text);
+			}
+
+			&:hover {
+				i {
+					color: var(--delete)!important;
+				}
+			}
+			
+		}
+
+		.tableView {
+
+			i {
+				color: var(--body-text);
+			}
+
+			&:hover {
+				i {
+					color: var(--info)!important;
+				}
+			}
+			
+		}
+
+		.tableTotal {
+			display: block;
+			text-align: right;
+			@include margin-small;
+			@include padding-small;
+
+			.labelTitle {
+				@include margin-small;
+			}
+
+			.labelBody {
+				@include margin-small;
+			}
+
+		}
+
+		.tableContainer {
+			background: transparent!important;
+		}
+
+	}
+
+	table.dataTable thead th, table.dataTable thead td {
+		border-color: var(--no-border)!important;
+	}

@@ -1,0 +1,42 @@
+// Time Clock detail page style
+	.timeclockDetailContainer {
+		span {
+			display: block;
+		}
+	}
+
+	.timeclockDetailDateContainer {
+		text-align: right;
+	}
+
+	.timeclockDetailClockin {
+
+		.timeclockDetailClockinTitle {
+			color: var(--primary);
+			font-weight: 600;
+		}
+
+		.timeclockDetailClockinInfo {
+
+			.media {
+
+				img {
+					max-width: 100px;
+					height: auto;
+				}
+
+				.media-body {
+
+					div {
+						display: block;
+						max-width: 100%;
+						word-wrap: break-word;
+					}
+
+				}
+
+			}
+
+		}
+
+	}

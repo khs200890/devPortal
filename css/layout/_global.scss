@@ -1,0 +1,122 @@
+// Global component styles
+
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    height: 100%;
+    font-size: 0.85rem;
+  }
+
+  a {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  // Main page wrapper 
+  #wrapper {
+    display: flex;
+    #content-wrapper {
+      width: 100%;
+      overflow-x: hidden;
+      #content {
+        flex: 1 0 auto;
+        background: var(--default-background);
+      }
+    }
+  }
+
+  // Set container padding to match gutter width instead of default 15px
+  .container,
+  .container-fluid {
+    padding-left: $grid-gutter-width;
+    padding-right: $grid-gutter-width;
+  }
+
+  // Scroll to top button
+  .scroll-to-top {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: $white;
+    background: fade-out($gray-800, .5);
+    line-height: 46px;
+    &:focus,
+    &:hover {
+      color: white;
+    }
+    &:hover {
+      background: $gray-800;
+    }
+    i {
+      font-weight: 800;
+    }
+  }
+
+// Common styles
+
+  //Navigation
+
+    .navbar {
+      @include margin-bottom-small;
+    }
+
+  // Text
+    .pageHeading {
+      @include padding-top-bottom-small;
+      @include padding-left-right-small;
+    }
+
+  // Badge
+    .badge {
+        color: #fff;
+        background-color: #2f7bea!important;
+    }
+
+  // Customize doughnut chart
+
+    .doughnutChartContainer {
+      position: relative;
+
+      .doughnutChartIcon {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      .doughnutValue {
+        color: var(--body-text);
+        display: inline;
+        float: right;
+      }
+
+      .chart-legend ul {
+        list-style-type: none;
+        margin-top: 30px;
+        padding-left: 0px;
+
+        li {
+          color: var(--body-text);
+
+          span{
+              display: inline-block;
+              border-radius: 50%;
+              color: var(--label-text);
+              width: 8px;
+              height: 8px;
+              margin-right: 5px;
+          }
+
+        }
+
+      }
+
+    }

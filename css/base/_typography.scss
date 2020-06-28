@@ -1,0 +1,212 @@
+//Title
+	.title {
+		color: var(--title-text);
+		font-size: 2em;
+		font-weight: 800;
+		margin: 0px;
+		padding: 0px;
+	}
+
+//Body
+	.bodyCopy {
+		color: var(--body-text);
+		font-size: 1em;
+		font-weight: 400;
+		margin: 0px;
+		padding: 0px;
+	}
+
+//Card
+	.cardTitle {
+		color: var(--title-text);
+		font-size: 1.3em;
+		font-weight: 700;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.cardBody {
+		color: var(--body-text);
+		font-size: 0.95em;
+		font-weight: 400;
+		margin: 0px;
+		padding: 0px;
+	}
+
+//Block
+	.blockTitle {
+		color: var(--title-text);
+		font-size: 1.2em;
+		font-weight: 700;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.blockBody {
+		color: var(--body-text);
+		font-size: 1em;
+		font-weight: 400;
+		margin: 0px;
+		padding: 0px;
+	}
+
+//Label
+	.labelTitle {
+		color: var(--title-text);
+		font-size: 1.2em;
+		font-weight: 700;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.labelTitleWhiteBg {
+		color: var(--white-bg-text);
+		font-size: 1em;
+		font-weight: 700;
+		margin: 0px;
+		padding: 0px;
+	}
+
+//Modal
+	.modalTitle {
+		color: var(--title-text);
+		font-size: 1.4em;
+		font-weight: 700;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.modalBody {
+		color: var(--body-text);
+		font-size: 1em;
+		font-weight: 400;
+		margin: 0px;
+		padding: 0px;
+	}
+
+//Table
+	table {
+
+		thead {
+
+			tr {
+
+				th {
+					color: var(--help-text);
+					font-size: 0.98em;
+					font-weight: 700;
+					margin: 0px;
+					padding: 10px;
+				}
+
+			}
+
+		}
+
+		tbody {
+
+			tr {
+
+				td {
+					color: var(--title-text);
+					font-size: 0.98em;
+					font-weight: 400;
+					margin: 0px;
+					padding: 10px;
+				}
+
+				.tableLabel {
+					color: var(--body-text);
+					font-size: 1em;
+					font-weight: 500;
+					margin: 0px;
+					padding: 10px;
+				}
+
+			}
+			
+		}
+
+	}
+
+//Form
+	form {
+
+		label {
+			color: var(--label-text);
+			font-size: 1em;
+			font-weight: 500;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		input, select {
+			color: var(--title-text);
+			font-size: 1em;
+		}
+
+	}
+
+//Placeholder 
+	::-webkit-input-placeholder { 
+		color: var(--disable-text);
+		font-size: 0.8em;
+	}
+
+	:-ms-input-placeholder { 
+		color: var(--disable-text);
+		font-size: 0.8em;
+	}
+
+	::placeholder {
+		color: var(--disable-text);
+		font-size: 0.8em;
+	}
+
+//User name (after login)
+	.userName {
+		color: var(--title-text);
+		font-size: 0.95em;
+		font-weight: 600;
+	}
+
+//Conditional
+	.error {
+		color: var(--error);
+		font-size: 1em;
+		font-weight: 500;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.success {
+		color: var(--success);
+		font-size: 1em;
+		font-weight: 500;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.progress {
+		color: var(--progress);
+		font-size: 1em;
+		font-weight: 500;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.warning {
+		color: var(--warning);
+		font-size: 1em;
+		font-weight: 500;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	.info {
+		color: var(--info);
+		font-size: 1em;
+		font-weight: 500;
+		margin: 0px;
+		padding: 0px;
+	}

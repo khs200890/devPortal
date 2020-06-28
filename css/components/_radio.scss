@@ -1,0 +1,48 @@
+//Radio
+	.radioContainer {
+
+		.jcf-radio {
+			background: transparent !important;
+			box-shadow: var(--no-box-shadow) !important;
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--border) !important;
+			color: var(--input-text);
+			height: 18px;
+			width: 18px;
+			transition: all ease 0.3s;
+			vertical-align: text-top;
+			@include rounded(50%);
+
+			span {
+				position: absolute;
+			    top: 3px;
+			    left: 3px;
+			    right: 3px;
+			    bottom: 3px;
+			    background: var(--primary);
+			    @include rounded(50%);
+			}
+
+			&:hover {
+				border-color: var(--no-border) !important;
+				transition: all ease 0.3s;
+			}
+
+			&:focus {
+				border-color: var(--no-border) !important;
+				transition: all ease 0.3s;
+			}
+		}
+
+		.jcf-checked {
+			border-color: var(--primary) !important;
+			transition: all ease 0.3s;
+		}
+
+		.jcf-label-active {
+			color: var(--label-text);
+			transition: all ease 0.3s;
+		}
+		
+	}

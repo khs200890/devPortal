@@ -1,0 +1,30 @@
+// Select List with action button
+	.selectListWithBtnContainer {
+		width: 100%;
+		background: var(--surface-background);
+		@include padding-small;
+		@include margin-top-bottom-small;
+
+		.selectListWithBtnRow {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			@include padding-small;
+
+		}
+	}
+
+	.selectListWithBtnNoBgContainer {
+		width: 100%;
+		background: transparent;
+		@include padding-small;
+		@include margin-top-bottom-small;
+
+		.selectListWithBtnRow {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			@include padding-small;
+
+		}
+	}

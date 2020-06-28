@@ -1,0 +1,103 @@
+// Primary Select
+	.jcf-select {
+		background: transparent;
+		border-radius: 5px !important;
+		box-shadow: var(--no-box-shadow) !important;
+		transition: all ease 0.3s;
+		border-style: solid !important;
+		border-width: 1px !important;
+		border-color: var(--border) !important;
+		height: 38px !important;
+		border: 1px solid #d1d3e2;
+		transition: all ease 0.3s;
+		border-radius: 0px!important;
+
+		.jcf-select-text, .jcf-select-opener {
+			line-height: 37px;
+		}
+
+		.jcf-option-optionText  {
+			color: var(--input-text);
+		}
+
+		.jcf-focus, .jcf-focus *, .jcf-select-drop-content {
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--no-border) !important;
+		}
+
+		.jcf-select-drop .jcf-hover, .jcf-list-box .jcf-selected {
+			background: var(--primary);
+			color: var(--body-text);
+		}
+
+		.jcf-option {
+			display: block;
+		    width: 100%;
+		    padding: 0.25rem 1.5rem;
+		    clear: both;
+		    font-weight: 400;
+		    color: var(--white-bg-text);
+		    text-align: inherit;
+		    white-space: nowrap;
+		    background-color: transparent;
+		    border: 0;
+		    font-size: 0.85rem;
+		}
+
+		.jcf-select-drop {
+			float: left;
+		    min-width: 10rem;
+		    padding: 0.5rem 0;
+		    margin: 0.125rem 0 0;
+		    font-size: 0.85rem;
+		    color: var(--white-bg-text);
+		    text-align: left;
+		    list-style: none;
+		    background-color: #fff;
+		    background-clip: padding-box;
+		    border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--border) !important;
+		    border-radius: 0.35rem;
+		}
+
+		.jcf-list-content {
+
+			.jcf-selected {
+				color: #d8d8d8;
+				cursor: none;
+				pointer-events: none;
+
+				&:hover {
+					background: none;
+				}
+			}
+
+		}
+
+		&:hover {
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--primary) !important;
+			box-shadow: var(--no-box-shadow) !important;
+			transition: all ease 0.3s;
+		}
+
+		&:focus {
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--primary) !important;
+			box-shadow: var(--no-box-shadow) !important;
+			transition: all ease 0.3s;
+		}
+	}
+
+	// Select inside form
+	.form-group {
+
+		.jcf-select {
+			width: 100%
+		}
+
+	}

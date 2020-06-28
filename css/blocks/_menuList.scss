@@ -1,0 +1,35 @@
+// Inner Left Menu Item List
+	.menuListContainer {
+		background: var(--surface-background);
+		@include no-padding-left-right;
+
+		.menuListItems {
+			@include padding-top-bottom-large;
+
+			ul {
+				list-style-type: none;
+				@include no-margin;
+				@include no-padding;
+
+				li {
+					border-bottom-style: solid;
+					border-bottom-width: 1px;
+					border-bottom-color: var(--border);
+
+					a {
+						color: var(--help-text)
+					}
+
+					.active {
+						color: var(--title-text)
+					}
+
+					&:last-child {
+						border: var(--no-border);
+					}
+				}
+
+			}
+
+		}
+	}

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import 
+  'vendors/custom-form',
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/typography';
+
+// 4. Layout-related sections
+@import
+  'layout/helper';
+
+// 5. Components
+@import
+  'components/button',
+  'components/card',
+  'components/checkbox',
+  'components/dropdown',
+  'components/datetimepicker',
+  'components/input',
+  'components/modal',
+  'components/radio',
+  'components/search',
+  'components/select',
+  'components/table',
+  'components/tabs',
+  'components/textarea';
+
+// 6. Page-specific styles
+@import
+  'pages/timeclockDetail';
+
+// 7. Themes
+@import
+  'themes/default';
+
+// Components Blocks
+@import
+  'blocks/listblock',
+  'blocks/linkTab',
+  'blocks/menuList',
+  'blocks/selectList',
+  'blocks/selectListWithBtn',
+  'blocks/tableBlock',
+  'blocks/tableTab';
+
+// Import Bootstrap
+@import "../js/vendors/bootstrap/scss/bootstrap.scss";
+
+//Nav bar
+@import
+  'layout/global',
+  'layout/footer',
+  'layout/responsive',
+  'layout/navs/global',
+  'layout/navs/sidebar',
+  'layout/navs/topbar';

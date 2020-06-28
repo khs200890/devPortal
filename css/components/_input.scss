@@ -1,0 +1,21 @@
+//Text
+	.primaryInput {
+		background: transparent !important;
+		box-shadow: var(--no-box-shadow) !important;
+		border-style: solid !important;
+		border-width: 1px !important;
+		border-color: var(--border) !important;
+		color: var(--input-text)!important;
+		transition: all ease 0.3s;
+		border-radius: 0px!important;
+
+		&:hover {
+			border-color: var(--primary) !important;
+			transition: all ease 0.3s;
+		}
+
+		&:focus {
+			border-color: var(--primary) !important;
+			transition: all ease 0.3s;
+		}
+	}

@@ -1,0 +1,38 @@
+//Dropdown with no border
+	.noBorderDropdown {
+		background: transparent;
+		border-radius: 5px !important;
+		box-shadow: var(--no-box-shadow) !important;
+		transition: all ease 0.3s;
+		border-radius: 0px!important;
+
+		&:focus {
+			box-shadow: var(--primary) !important;
+			transition: all ease 0.3s;
+		}
+	}
+
+//Dropdown with border
+	.borderDropdown {
+		background: transparent;
+		border-radius: 5px !important;
+		box-shadow: var(--no-box-shadow) !important;
+		transition: all ease 0.3s;
+		border-style: solid !important;
+		border-width: 1px !important;
+		border-color: var(--border) !important;
+		border-radius: 0px!important;
+
+		&:hover {
+			border-style: solid !important;
+			border-width: 1px !important;
+			border-color: var(--primary) !important;
+			box-shadow: var(--no-box-shadow) !important;
+			transition: all ease 0.3s;
+		}
+		
+		&:focus {
+			box-shadow: var(--no-box-shadow) !important;
+			transition: all ease 0.3s;
+		}
+	}

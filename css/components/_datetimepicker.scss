@@ -1,0 +1,149 @@
+// Date Time Pickers
+
+	.dateTimePickerContainer {
+		position: relative;
+
+		//Time Picker
+			.primaryTime {
+				background: transparent !important;
+				box-shadow: var(--no-box-shadow) !important;
+				border-style: solid !important;
+				border-width: 1px !important;
+				border-color: var(--border) !important;
+				color: var(--input-text);
+				transition: all ease 0.3s;
+				@include rounded(0%);
+
+				&:hover {
+					border-style: solid !important;
+					border-width: 1px !important;
+					border-color: var(--primary) !important;
+					box-shadow: var(--no-box-shadow) !important;
+					transition: all ease 0.3s;
+				}
+
+				&:focus {
+					border-style: solid !important;
+					border-width: 1px !important;
+					border-color: var(--primary) !important;
+					box-shadow: var(--no-box-shadow) !important;
+					transition: all ease 0.3s;
+				}
+			}
+
+			.primaryTimeIcon {
+				position: absolute;
+			    width: auto;
+			    bottom: 4px;
+			    right: 10px;
+			    line-height: 29px;
+			    margin-top: 0;
+			}	
+
+		//Date Picker
+			.primaryDate {
+				background: transparent !important;
+				box-shadow: var(--no-box-shadow) !important;
+				border-style: solid !important;
+				border-width: 1px !important;
+				border-color: var(--border) !important;
+				color: var(--input-text);
+				transition: all ease 0.3s;
+				@include rounded(0%);
+
+				&:hover {
+					border-style: solid !important;
+					border-width: 1px !important;
+					border-color: var(--primary) !important;
+					box-shadow: var(--no-box-shadow) !important;
+					transition: all ease 0.3s;
+				}
+
+				&:focus {
+					border-style: solid !important;
+					border-width: 1px !important;
+					border-color: var(--primary) !important;
+					box-shadow: var(--no-box-shadow) !important;
+					transition: all ease 0.3s;
+				}
+			}
+
+			.primaryDateIcon {
+				position: absolute;
+			    width: auto;
+			    bottom: 4px;
+			    right: 10px;
+			    line-height: 29px;
+			    margin-top: 0;
+			}
+
+	}	
+
+// Calendar 
+
+	.bootstrap-datetimepicker-widget {
+		padding: 10px;
+
+		table {
+
+			thead {
+
+				th {
+					border: var(--disable-border);
+
+					.next {
+						color: var(--primary);
+					}
+				}
+
+			}
+
+			tr {
+
+				td {
+				    font-weight: 400;
+				    color: var(--white-bg-text);
+				    background-color: transparent;
+				    font-size: 0.85rem;
+
+				    .btn-primary {
+				    	background: var(--primary) !important;
+				    	color: var(--input-text);
+				    }
+
+				    .timepicker-hour, .timepicker-minute {
+				    	font-weight: 400;
+					    color: var(--white-bg-text);
+					    background-color: transparent;
+					    font-size: 0.85rem;
+				    }
+
+				    .active {
+				    	background: var(--primary) !important;
+
+				    	&:hover {
+					    	background: var(--primary) !important;
+					    }
+
+				    }	
+
+				    .disabled {
+				    	color: var(--disable-text) !important;
+
+				    	&:hover {
+					    	color: var(--disable-text) !important;
+					    }
+					    
+				    }	
+
+				}
+
+				.picker-switch {
+					color: var(--primary);
+				}
+
+			}
+
+		}
+
+	}

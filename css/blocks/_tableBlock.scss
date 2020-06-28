@@ -1,0 +1,9 @@
+// Table section with tab
+	.tableContainer {
+		background: var(--surface-background);
+		@include padding-large;
+
+		.tableContainer {
+			@include padding-small;
+		}
+	}

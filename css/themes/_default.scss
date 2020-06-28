@@ -1,0 +1,18 @@
+// Theme Styles
+
+  // Main page wrapper
+  #wrapper {
+    display: flex;
+    #content-wrapper {
+      width: 100%;
+      overflow-x: hidden;
+      #content {
+        flex: 1 0 auto;
+      }
+    }
+  }
+
+  //Common
+  .dropdown.no-arrow .dropdown-toggle::after {
+    display: none;
+  }

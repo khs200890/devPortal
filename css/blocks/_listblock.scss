@@ -1,0 +1,27 @@
+//List Block
+	.listBlock {
+
+		.listBlockTable {
+			@include rounded(1%);
+
+			table {
+				width: 100%;
+
+				thead {
+
+					tr {
+
+						&:first-child {
+							border-bottom-style: solid !important;
+							border-bottom-width: 1px !important;
+							border-bottom-color: var(--border) !important;
+						}
+					}
+
+				}
+
+			}
+
+		}
+
+	}

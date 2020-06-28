@@ -1,0 +1,338 @@
+// Overwirte default button styles 
+
+	.btn {
+		font-size: 0.9em!important;
+		height: 38px;
+		border-radius: 0px!important;
+		box-shadow: none!important;
+	}
+
+// Primary Button
+	.primaryBtn {
+		background: var(--primary-btn-background)!important;
+		border-color: var(--primary)!important;
+		color: var(--default-text)!important;
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--surface-background)!important;
+			border-color: var(--primary)!important;
+			color: var(--primary)!important;
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--surface-background)!important;
+			border-color: var(--primary)!important;
+			color: var(--primary)!important;
+			transition: all ease 0.3s;
+		}
+	}
+
+	.primaryRoundedBtn {
+		background: var(--primary-btn-background);
+		border-color: var(--primary);
+		color: var(--default-text);
+		text-align: center;
+		@include rounded(5px);
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--surface-background);
+			border-color: var(--primary);
+			color: var(--primary);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--surface-background);
+			border-color: var(--primary);
+			color: var(--primary);
+			transition: all ease 0.3s;
+		}
+	}
+
+// Secondary Button
+	.secondaryBtn {
+		background: var(--surface)!important;
+		border-color: var(--disable-border)!important;
+		color: var(--title-text)!important;
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background)!important;
+			border-color: var(--primary)!important;
+			color: var(--primary)!important;
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background)!important;
+			border-color: var(--primary)!important;
+			color: var(--primary)!important;
+			transition: all ease 0.3s;
+		}
+	}
+
+// Disable Button
+	.disableBtn {
+		background: var(--disable-background);
+		border-color: var(--disable-border);
+		color: var(--body-text);
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--disable-border);
+			color: var(--body-text);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--disable-border);
+			color: var(--body-text);
+			transition: all ease 0.3s;
+		}
+	}
+
+	.disableRoundedBtn {
+		background: var(--disable-background);
+		border-color: var(--disable-border);
+		color: var(--body-text);
+		text-align: center;
+		@include rounded(5px);
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--disable-border);
+			color: var(--body-text);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--disable-border);
+			color: var(--body-text);
+			transition: all ease 0.3s;
+		}
+	}
+
+// Success Button
+	.successBtn {
+		background: var(--success);
+		border-color: var(--success);
+		color: var(--default-text);
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--success);
+			color: var(--success);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--success);
+			color: var(--success);
+			transition: all ease 0.3s;
+		}
+	}
+
+	.successRoundedBtn {
+		background: var(--success);
+		border-color: var(--success);
+		color: var(--default-text);
+		text-align: center;
+		@include rounded(5px);
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--success);
+			color: var(--success);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--success);
+			color: var(--success);
+			transition: all ease 0.3s;
+		}
+	}
+
+// Danger Button
+	.errorBtn {
+		background: var(--error);
+		border-color: var(--error);
+		color: var(--default-text);
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--error);
+			color: var(--error);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--error);
+			color: var(--error);
+			transition: all ease 0.3s;
+		}
+	}
+
+	.errorRoundedBtn {
+		background: var(--error);
+		border-color: var(--error);
+		color: var(--default-text);
+		text-align: center;
+		@include rounded(5px);
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--error);
+			color: var(--error);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--error);
+			color: var(--error);
+			transition: all ease 0.3s;
+		}
+	}
+
+// Warning Button
+	.warningBtn {
+		background: var(--warning);
+		border-color: var(--warning);
+		color: var(--default-text);
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--warning);
+			color: var(--warning);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--warning);
+			color: var(--warning);
+			transition: all ease 0.3s;
+		}
+	}
+
+	.warningRoundedBtn {
+		background: var(--warning);
+		border-color: var(--warning);
+		color: var(--default-text);
+		text-align: center;
+		@include rounded(5px);
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--warning);
+			color: var(--warning);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--warning);
+			color: var(--warning);
+			transition: all ease 0.3s;
+		}
+	}
+
+// Progress Button
+	.progressBtn {
+		background: var(--progress);
+		border-color: var(--progress);
+		color: var(--default-text);
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--progress);
+			color: var(--progress);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--progress);
+			color: var(--progress);
+			transition: all ease 0.3s;
+		}
+	}
+
+	.progressRoundedBtn {
+		background: var(--progress);
+		border-color: var(--progress);
+		color: var(--default-text);
+		text-align: center;
+		@include rounded(5px);
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--progress);
+			color: var(--progress);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--progress);
+			color: var(--progress);
+			transition: all ease 0.3s;
+		}
+	}
+
+// Info Button
+	.infoBtn {
+		background: var(--info);
+		border-color: var(--info);
+		color: var(--default-text);
+		text-align: center;
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--info);
+			color: var(--info);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--info);
+			color: var(--info);
+			transition: all ease 0.3s;
+		}
+	}
+
+	.infoRoundedBtn {
+		background: var(--info);
+		border-color: var(--info);
+		color: var(--default-text);
+		text-align: center;
+		@include rounded(5px);
+		transition: all ease 0.3s;
+		
+		&:hover {
+			background: var(--white-background);
+			border-color: var(--info);
+			color: var(--info);
+			transition: all ease 0.3s;
+		}
+		&:active {
+			background: var(--white-background);
+			border-color: var(--info);
+			color: var(--info);
+			transition: all ease 0.3s;
+		}
+	}

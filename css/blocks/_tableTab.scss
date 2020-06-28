@@ -1,0 +1,17 @@
+// Block title and tabs same row
+	.tableTabContainer {
+		display: flex!important;
+
+		.blockTitle {
+			line-height: 36px!important;
+		}
+
+		.tabsContainer {
+			margin: 0px!important;
+
+			.nav-tabs {
+				float: right!important;
+			}
+		}
+
+	}

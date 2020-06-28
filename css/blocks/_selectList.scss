@@ -1,0 +1,35 @@
+//Select List Container
+	.selectListContainer {
+		width: 100%;
+		background: var(--surface-background);
+		@include padding-small;
+		@include margin-top-bottom-small;
+
+		.selectListWithBtnRow {
+			justify-content: space-between;
+			display: flex;
+			width: 100%;
+			@include padding-small;
+
+			.primaryBtn {
+				@include margin-top-bottom-small;
+			}
+		}
+	}
+
+	.selectListNoBgContainer {
+		width: 100%;
+		@include padding-small;
+		@include margin-top-bottom-small;
+
+		.selectListWithBtnRow {
+			justify-content: space-between;
+			display: flex;
+			width: 100%;
+			@include padding-small;
+
+			.primaryBtn {
+				@include margin-top-bottom-small;
+			}
+		}
+	}

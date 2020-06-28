@@ -1,0 +1,138 @@
+//Card 
+	.cardListRow {
+		
+		.cardContainer {
+			position: relative;
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+			flex-wrap: nowrap;
+			align-items: center;
+		    min-width: 0;
+		    word-wrap: break-word;
+		    background-color: var(--surface-background);
+		    background-clip: border-box;
+		    border: none;
+		    box-shadow: var(--default-box-shadow);
+		    @include rounded(3%);
+		    @include margin-large;
+		    transition: all ease 0.3s;
+		    height: fit-content;
+
+			.cardImage {
+				@include padding-large();
+
+				img {
+					width: 80px;
+					height: 80px;
+					max-width: 100px;
+					max-height: 100px;
+					@include rounded(50%);
+					transition: all ease 0.3s;
+				}
+
+			}
+
+			.cardInfo {
+				@include padding-large();
+
+				span {
+					display: block;
+					width: max-content;
+				}
+
+			}
+
+			&:hover {
+				box-shadow: var(--active-box-shadow);
+				transition: all ease 0.3s;
+
+				.cardImage {
+
+					img {
+						@include rounded(0%);
+						transition: all ease 0.3s;
+					}
+
+				}
+			}
+
+		}	
+
+		.blockContainer {
+			position: relative;
+		    min-width: 0;
+		    word-wrap: break-word;
+		    background-color: var(--surface-background);
+		    background-clip: border-box;
+		    border: none;
+		    box-shadow: var(--default-box-shadow);
+		    @include rounded(1%);
+		    @include padding-large;
+		    margin: 10px;
+		    transition: all ease 0.3s;
+		    height: fit-content;
+		}
+
+	}
+
+	.cardListColumn {
+		
+		.cardContainer {
+		    display: flex;
+		    flex-direction: row;
+		    justify-content: center;
+			flex-wrap: nowrap;
+			align-items: center;
+		    min-width: 0;
+		    word-wrap: break-word;
+		    background-color: var(--surface-background);
+		    background-clip: border-box;
+		    border: none;
+		    box-shadow: var(--default-box-shadow);
+		    @include rounded(3%);
+		    @include margin-large;
+		    transition: all ease 0.3s;
+		    height: fit-content;
+
+			.cardImage {
+				@include padding-large();
+
+				img {
+					width: 80px;
+					height: 80px;
+					max-width: 100px;
+					max-height: 100px;
+					@include rounded(50%);
+					transition: all ease 0.3s;
+				}
+
+			}
+
+			.cardInfo {
+				@include padding-large();
+
+				span {
+					display: block;
+					width: max-content;
+				}
+
+			}
+
+			&:hover {
+				box-shadow: var(--active-box-shadow);
+				transition: all ease 0.3s;
+
+				.cardImage {
+
+					img {
+						@include rounded(0%);
+						transition: all ease 0.3s;
+					}
+
+				}
+			}
+
+		}	
+
+	}

@@ -1,0 +1,60 @@
+// Tab style Link
+	.linkTabContainer {
+		width: 100%;
+		background: transparent;
+		@include padding-small;
+		@include margin-top-bottom-small;
+
+		.linkTabRow {
+			display: flex;
+			flex-direction: row;
+			width: 100%;
+			@include padding-small;
+			@include no-padding-left;
+
+			ul {
+				list-style-type: none;
+				@include no-padding-left;
+
+				li {
+					display: inline-block;
+					float: left;
+
+					a {
+						line-height: 25px;
+					}
+
+				}
+
+				.active {
+
+					a {
+						background: var(--primary-background)!important;
+						border-color: var(--primary)!important;
+						color: var(--default-text)!important;
+						text-align: center;
+						transition: all ease 0.3s;
+						
+						&:hover {
+							background: var(--white-background)!important;
+							border-color: var(--primary)!important;
+							color: var(--primary)!important;
+							transition: all ease 0.3s;
+						}
+						&:active {
+							background: var(--white-background)!important;
+							border-color: var(--primary)!important;
+							color: var(--primary)!important;
+							transition: all ease 0.3s;
+						}	
+					}
+
+				}
+
+			}
+
+			.secondaryBtn {
+				@include margin-top-bottom-small;
+			}
+		}
+	}
